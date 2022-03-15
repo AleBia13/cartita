@@ -1,0 +1,171 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E6665580-98D0-4EE8-90BD-24F52803FB19}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Cartita_Alexandra_Mazare</RootNamespace>
+    <AssemblyName>Cartita_Alexandra_Mazare</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="EndGame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EndGame.Designer.cs">
+      <DependentUpon>EndGame.cs</DependentUpon>
+    </Compile>
+    <Compile Include="nivel2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="nivel2.Designer.cs">
+      <DependentUpon>nivel2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="nivel3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="nivel3.Designer.cs">
+      <DependentUpon>nivel3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StartMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StartMenu.Designer.cs">
+      <DependentUpon>StartMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Joc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Joc.Designer.cs">
+      <DependentUpon>Joc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="EndGame.resx">
+      <DependentUpon>EndGame.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Joc.resx">
+      <DependentUpon>Joc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="nivel2.resx">
+      <DependentUpon>nivel2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="nivel3.resx">
+      <DependentUpon>nivel3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StartMenu.resx">
+      <DependentUpon>StartMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\horizont.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cooltext326394999892881.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e52384e7da1ceb7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6a6a9fe280f8d03.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mole-hole-png-9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\whack-a-mole-clipart-5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\whack-a-mole-clipart-51.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cooltext326399834992264.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cooltext326399946257189.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cooltext326399960991367.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cooltext326401043936730.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cooltext326401105546781.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cooltext326401147493818.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cooltext326401178925860.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ac639320ba7c43c.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ac639320ba7c43c1.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
